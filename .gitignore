@@ -46,3 +46,9 @@ app.*.map.json
 
 # Widget Preview related
 .widget_preview/
+
+# Keamanan: jangan commit file sensitif
+.env
+*.jks
+*.keystore
+key.properties

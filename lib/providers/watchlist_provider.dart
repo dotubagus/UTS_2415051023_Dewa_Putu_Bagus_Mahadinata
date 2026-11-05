@@ -3,6 +3,7 @@ import 'package:flutter/foundation.dart';
 import '../models/watchlist_item.dart';
 import '../repositories/watchlist_repository.dart';
 import 'movie_provider.dart' show LoadStatus;
+export 'movie_provider.dart' show LoadStatus;
 
 class WatchlistProvider extends ChangeNotifier {
   final WatchlistRepository _repository;

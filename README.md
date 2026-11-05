@@ -14,7 +14,7 @@
 
 ---
 
-## 📌 Deskripsi Proyek
+## Deskripsi Proyek
 **CineList** adalah aplikasi mobile berbasis Flutter untuk menjelajahi katalog film dunia dan mengelola daftar tontonan pribadi secara interaktif.
 
 Aplikasi ini menerapkan pemisahan peran yang tegas antara dua sumber data:
@@ -23,7 +23,7 @@ Aplikasi ini menerapkan pemisahan peran yang tegas antara dua sumber data:
 
 ---
 
-## 🌟 Fitur Utama
+## Fitur Utama
 - **Katalog Film Trending:** Hero carousel responsif bergaya IDLIX dan daftar film terpopuler.
 - **Pencarian Film Real-time:** Pencarian cepat berdasarkan judul film melalui TMDB API.
 - **Filter Berdasarkan Genre:** Filter instan kategori Action, Drama, Comedy, Horror, Sci-Fi.
@@ -43,7 +43,7 @@ Aplikasi ini menerapkan pemisahan peran yang tegas antara dua sumber data:
 
 ---
 
-## 🏗️ Arsitektur Aplikasi
+## Arsitektur Aplikasi
 Aplikasi mengadopsi pola arsitektur berlapis (*Clean Layered Architecture*):
 ```
 lib/
@@ -58,7 +58,7 @@ lib/
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Framework:** Flutter & Dart
 - **State Management:** Provider (`MultiProvider`, `ChangeNotifier`)
 - **HTTP Client:** `http`
@@ -69,7 +69,7 @@ lib/
 
 ---
 
-## 🚀 Cara Menjalankan Aplikasi
+## Cara Menjalankan Aplikasi
 
 1. **Clone repository ini:**
    ```bash

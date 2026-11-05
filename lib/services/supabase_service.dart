@@ -21,6 +21,10 @@ class SupabaseService {
           .map((e) => WatchlistItem.fromJson(e as Map<String, dynamic>))
           .toList();
     } on PostgrestException catch (e) {
+      if (e.message.contains('Could not find the table') || e.code == 'PGRST205') {
+        throw DatabaseException(
+            'Tabel "watchlist" belum dibuat di database Supabase.\nSilakan jalankan query SQL pembuatan tabel di Supabase SQL Editor.');
+      }
       throw DatabaseException('Gagal memuat watchlist: ${e.message}');
     }
   }
@@ -31,6 +35,10 @@ class SupabaseService {
           await _db.from(_table).insert(item.toJson()).select().single();
       return WatchlistItem.fromJson(data);
     } on PostgrestException catch (e) {
+      if (e.message.contains('Could not find the table') || e.code == 'PGRST205') {
+        throw DatabaseException(
+            'Tabel "watchlist" belum dibuat di Supabase. Silakan buat tabel terlebih dahulu.');
+      }
       throw DatabaseException('Gagal menyimpan: ${e.message}');
     }
   }
